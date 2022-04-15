@@ -7,7 +7,8 @@
 }
 
 .title {
-  background-color: rgb(34, 34, 34);
+  background-image: linear-gradient(to right, rgb(252, 157, 157), red);
+  /* background-image: linear-gradient(to right, #0052a2, #000328); */
   color: white;
   width: 100%;
   height: 180px;
@@ -27,17 +28,18 @@
   border-radius: 4px;
   height: 30px;
   width: 90px;
-  margin: 5px;
-  background-color: rgb(218, 59, 59);
+  margin: 15px;
+  background-color: rgb(60, 60, 60);
   color: white;
   border: none;
 }
 .title button:hover {
-  background-color: rgb(247, 98, 98);
+  background-color: rgb(32, 32, 32);
   cursor: pointer;
 }
 body {
-  background-color: #282c34;
+  /* background-image: linear-gradient(to left, #282c34, #181b1f); */
+  background-image: linear-gradient(to right, white, rgb(225, 225, 225));
   margin: 0;
   padding: 0;
 }
@@ -46,6 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: black;
 }
 .display-section img {
   width: 140px;
@@ -53,4 +56,10 @@ body {
 
 .display-section h3 {
   margin: 2px;
+}
+
+.middle-display {
+  background-color: black;
+  height: 30px;
+  color: black;
 }

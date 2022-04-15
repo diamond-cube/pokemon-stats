@@ -20,7 +20,7 @@ function App() {
       (res) => {
         setPokemonInfo({
           name: res.data.name[0].toUpperCase() + res.data.name.substring(1),
-          index: res.data.order,
+          index: res.data.id,
           img: res.data.sprites.front_default,
           hp: res.data.stats[0].base_stat,
           attack: res.data.stats[1].base_stat,
@@ -47,6 +47,7 @@ function App() {
         />
         <button onClick={searchPokemon}>Search</button>
       </div>
+      <div className="middle-display">.</div>
       <div className="display-section">
         {!chosenPokemon ? (
           <h1>Please choose a pokemon</h1>
